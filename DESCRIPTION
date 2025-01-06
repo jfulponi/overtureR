@@ -1,0 +1,12 @@
+Package: overtureR
+Title: Interface for Overture Data with Spatial Support
+Version: 0.1.0
+Authors@R: person("Juan Ignacio Fulponi", email = "jfulponi@economicas.uba.ar", role = c("aut", "cre"))
+Description: Provides functions to interact with Overture spatial datasets
+    using Arrow and sf for geospatial analysis.
+Depends: R (>= 4.0)
+Imports: sf, arrow, tidyr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
