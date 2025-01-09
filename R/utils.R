@@ -21,7 +21,7 @@ record_batch_reader <- function(overture_type, bbox = NULL) {
   }
 
   # Create dataset
-  dataset <- arrow::open_dataset(source = arrow::s3_bucket(path, anonymous = TRUE),
+  dataset <- arrow::open_dataset(source = arrow::s3_bucket(path, anonymous = TRUE, region = "us-west-2"),
                                  format = "parquet", filesystem = "s3")
 
   scan_builder <- dataset$NewScan()
